@@ -1,0 +1,368 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"visible": true
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "TCP_Link_Button"
+				"text": "Link"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "TCP_Link_ButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 725
+				"y": 535
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "Speed_Slider"
+				"maximum": 400
+				addEvent( new FormEvent( "java.awt.event.MouseMotionListener", "mouseDragged", "Speed_SliderMouseDragged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 430
+				"y": 540
+				"width": 265
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "IP_TextField"
+				"text": "192.168.0.1"
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 815
+				"y": 535
+				"width": 160
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Port_TextField"
+				"text": "8888"
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 985
+				"y": 535
+				"width": 76
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "Link_State"
+				"text": "UNLINK"
+				"focusable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 1070
+				"y": 540
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "DrawArea"
+				add( new FormComponent( "Car_Util.Test" ) {
+					name: "test1"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 425
+				"y": 25
+				"width": 710
+				"height": 495
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Fore_Button"
+				"text": "UP"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "Fore_ButtonMousePressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "Fore_ButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 170
+				"y": 485
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "LEFT_Button"
+				"text": "LEFT"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "LEFT_ButtonMousePressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "LEFT_ButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 535
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "RIGHT_Button"
+				"text": "RIGHT"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "RIGHT_ButtonMousePressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "RIGHT_ButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 535
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "DOWN_Button"
+				"text": "DOWN"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "DOWN_ButtonMousePressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "DOWN_ButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 165
+				"y": 535
+				"width": 88
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "Log_Pane"
+					"text": "Log Area"
+					"editable": false
+					"focusable": false
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 25
+				"width": 370
+				"height": 420
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Speed_Label"
+				"text": "Speed:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 390
+				"y": 540
+				"width": 50
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Author"
+				"text": "Hello, my name is Yishuang Tian. This opensource software is made for everyone. I hope you can enjoy it."
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 0
+				"height": 20
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "Keyboard Control"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "radioButton1KeyPressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "radioButton1KeyReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 260
+				"y": 490
+				"width": 145
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Speed_TextField"
+				"text": "Speed Display"
+				"horizontalAlignment": 0
+				"focusable": false
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 450
+				"width": 370
+			} )
+			add( new FormComponent( "javax.swing.JToggleButton" ) {
+				name: "Motor_Switch"
+				"text": "A/B"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Motor_SwitchMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 485
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Speed_Num"
+				"text": "0"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 695
+				"y": 540
+				"height": 25
+				"width": 30
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Milchigs"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "About"
+						"text": "About"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "AboutMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem11"
+						"text": "Author"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Github"
+						"text": "Github"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Thanks"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Preference"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu6"
+						"text": "TCP Link"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem14"
+							"text": "LINK"
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem13"
+							"text": "UNLINK"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu7"
+						"text": "Motor Select"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem15"
+							"text": "Motor A"
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem16"
+							"text": "Motor B"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu8"
+						"text": "Speed Setup"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem17"
+							"text": "Speed UP"
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem18"
+							"text": "Speed DOWN"
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Tools"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "System State"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem23"
+						"text": "Thread Pool"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem32"
+						"text": "PID Tool"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuItem32MousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "TCP Client"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuItem3MousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "TCP Server"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuItem4MousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem21"
+						"text": "UDP Client"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem22"
+						"text": "UDP Server"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "Motion Processer"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem19"
+						"text": "Keyboard Control"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem20"
+						"text": "HFUT Spider(Credit cookie QAQ)"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuItem20MousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "Help"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "How to use"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "Website"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "Wiki"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu5"
+					"text": "SLAM"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "Under development..."
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu9"
+					"text": "Hardware"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem24"
+						"text": "PCB Layout"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuItem24MousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem25"
+						"text": "MCU Layout"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem26"
+						"text": "Hardware Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem27"
+						"text": "Bom Table"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu10"
+					"text": "Document"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "Begin Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem28"
+						"text": "Hardware Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem29"
+						"text": "Software Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem31"
+						"text": "Make Follow Document"
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu11"
+						"text": "Module Document"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem30"
+						"text": "Use Guide"
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1155, 630 )
+		} )
+	}
+}
