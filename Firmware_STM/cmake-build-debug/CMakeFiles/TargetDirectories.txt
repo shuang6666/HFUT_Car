@@ -1,0 +1,3 @@
+C:/Users/shuan/Documents/CubeMX/TYS_Car_F103/cmake-build-debug/CMakeFiles/TYS_Car_F103.elf.dir
+C:/Users/shuan/Documents/CubeMX/TYS_Car_F103/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/shuan/Documents/CubeMX/TYS_Car_F103/cmake-build-debug/CMakeFiles/rebuild_cache.dir

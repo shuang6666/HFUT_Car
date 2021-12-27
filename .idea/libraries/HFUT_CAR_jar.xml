@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="HFUT_CAR_jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/HFUT_CAR_jar/HFUT_CAR.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/HFUT_CAR_jar/HFUT_CAR.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
